@@ -26,8 +26,6 @@
             <span class="col-6 border-top border-lg"> <u>Weight</u><br/> <span id="totalWeight"></span></span>
 
             <span class="col-6"> <u>Prority</u><br/> <span  id="priority" title="click - copy to clipboard." style="cursor: pointer;"></span></span>
-
-            <progress class="col-6" id="progress" max="10" value="0"></progress>
         </div>
 
       </div>
@@ -59,7 +57,6 @@
         let newAX = parseInt(AX)
         let newBX = parseInt(BX)
         let solution = ((newAX * base) / newBX)
-        document.getElementById('progress').value = solution;
         if(solution > 10){ document.getElementById('totalWeight').innerHTML ="The amount of time to complete this exceeds the amount of time before this is due."     
             } else {
         document.getElementById('totalWeight').innerHTML = solution.toFixed()
