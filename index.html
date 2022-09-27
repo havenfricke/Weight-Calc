@@ -62,11 +62,11 @@
             } else {
         document.getElementById('totalWeight').innerHTML = solution.toFixed()
             }
-        if(solution >= 0.0 && solution <= 3.0){
+        if(solution >= 0.0 && solution <= 2.0){
             document.getElementById('priority').innerHTML = "Task priority is relatively low."
-        } else if(solution >= 3.1 && solution <= 6.4) {
+        } else if(solution >= 2.1 && solution <= 5.4) {
             document.getElementById('priority').innerHTML =`Task priority is moderate. Do if no other tasks are greater than current weight: ${solution.toFixed()}`
-        } else if (solution >= 6.5 && solution <= 7.4) {
+        } else if (solution >= 5.5 && solution <= 6.4) {
             document.getElementById('priority').innerHTML = `Task priority is High. Do immediately if no higher weight: ${solution.toFixed()}`
         } else {
             document.getElementById('priority').innerHTML = `Task priority is Very High. Do immediately if no higher weight: ${solution.toFixed()}`
